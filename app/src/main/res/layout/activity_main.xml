@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+       <ViewFlipper
+           android:id="@+id/v_flipper"
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginBottom="10dp">
+
+       </ViewFlipper>
+
+       <EditText
+           android:id="@+id/edtId"
+           android:layout_width="300dp"
+           android:layout_gravity="center"
+           android:inputType="number"
+           android:layout_height="wrap_content"
+           android:hint="Enter ID"
+           android:layout_marginTop="10dp"/>
+
+
+       <EditText
+           android:id="@+id/question_messageID"
+           android:layout_width="300dp"
+           android:layout_gravity="center"
+           android:inputType="text"
+           android:layout_height="wrap_content"
+           android:hint="Type a question"
+           android:layout_marginTop="10dp"/>
+
+       <EditText
+           android:id="@+id/answer_message"
+           android:layout_width="300dp"
+           android:layout_gravity="center"
+           android:inputType="text"
+           android:layout_height="wrap_content"
+           android:hint="Type an answer"
+           android:layout_marginTop="10dp"/>
+
+       <com.spark.submitbutton.SubmitButton
+           android:id="@+id/add_ID"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:text="ADD"
+           android:textAllCaps="true"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           app:layout_editor_absoluteX="8dp"
+           app:layout_editor_absoluteY="8dp"
+           app:sub_btn_background="@color/colorAccent"
+           app:sub_btn_duration="3000"
+           app:sub_btn_line_color="@color/sub_btn_line"
+           app:sub_btn_ripple_color="@color/colorPrimaryDark"
+           app:sub_btn_tick_color="@color/yellow" />
+
+
+       <com.spark.submitbutton.SubmitButton
+           android:id="@+id/update_ID"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:text="Update"
+           android:textAllCaps="true"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           app:layout_editor_absoluteX="8dp"
+           app:layout_editor_absoluteY="8dp"
+           app:sub_btn_background="@color/colorAccent"
+           app:sub_btn_duration="3000"
+           app:sub_btn_line_color="@color/sub_btn_line"
+           app:sub_btn_ripple_color="@color/colorPrimaryDark"
+           app:sub_btn_tick_color="@color/yellow" />
+
+
+
+       <com.spark.submitbutton.SubmitButton
+           android:id="@+id/delete_ID"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:text="DELETE"
+           android:textAllCaps="true"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           app:layout_editor_absoluteX="8dp"
+           app:layout_editor_absoluteY="8dp"
+           app:sub_btn_background="@color/colorAccent"
+           app:sub_btn_duration="3000"
+           app:sub_btn_line_color="@color/sub_btn_line"
+           app:sub_btn_ripple_color="@color/colorPrimaryDark"
+           app:sub_btn_tick_color="@color/yellow" />
+
+       <ListView
+           android:id="@+id/list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:choiceMode="singleChoice">
+
+       </ListView>
+
+   </LinearLayout>
+
+
+</ScrollView>
